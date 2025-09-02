@@ -3,9 +3,9 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utils.models import llm
-from pydantic_models.topic import TopicList
+from models.topic import TopicList
 from utils.prompts import extract_topics_prompt
-from functions.unsplash_api import search_unsplash
+from app.functions.unsplash_service import search_unsplash
 
 def call_llm(user_query: str):
     user_prompt = extract_topics_prompt.format(user_input=user_query)
