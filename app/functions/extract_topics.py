@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.models import llm
 from models.topic import TopicList
 from utils.prompts import extract_topics_prompt
-from app.functions.unsplash_service import search_unsplash
+from functions.unsplash_service import search_unsplash
 
 def call_llm(user_query: str):
     user_prompt = extract_topics_prompt.format(user_input=user_query)

@@ -13,5 +13,6 @@ llm = ChatGroq(
     reasoning_format="parsed",
     timeout=None,
     max_retries=2,
+    api_key=ACCESS_KEY
     # other params...
 )
