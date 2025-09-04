@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat page</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/chat.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Home</a>
+            <a href="">News</a>
+        </div>
+        <div class="chat">
+            <div class="heading">
+                Images AI
+            </div>
+            <div class="chat_content" id="chat_content">
+                Main body
+            </div>
+            <div class="chat_bar">
+                <input type="text" id="chat_input" placeholder="Type here..." />
+                <button id="send_btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='js/chat.js') }}"></script>
+    
+</body>
+</html>

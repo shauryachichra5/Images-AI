@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+    display: flex;
+    height: 100vh; /* full viewport height */
+}
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 16px;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.chat {
+    flex: 1; /* takes remaining space */
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    display: flex;
+}
+.chat_content {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+.chat_bar {
+    padding: 8px;
+    width: 100%;
+    height: 30px;
+}

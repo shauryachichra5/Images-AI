@@ -1,0 +1,33 @@
+const chatContent = document.getElementById("chat_content");
+const chatInput = document.getElementById("chat_input");
+const sendBtn = document.getElementById("send_btn");
+
+sendBtn.addEventListener("click", async () => {
+    const msg = chatInput.value.trim();
+    if (msg === "") return;
+
+    // Add user message
+    const userMsg = document.createElement("div");
+    userMsg.className = "message user";
+    userMsg.textContent = msg;
+    chatContent.appendChild(userMsg);
+
+    chatInput.value = "";
+
+    // Scroll to bottom
+    chatContent.scrollTop = chatContent.scrollHeight;
+
+    // Redirect to API
+    const response = await fetch("/api/get_reply", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: msg })
+    });
+
+    const data = await response.json();
+    const botMsg = document.createElement("div");
+    botMsg.className = "message bot";
+    botMsg.textContent = data.reply;
+    chatContent.appendChild(botMsg);
+    chatContent.scrollTop = chatContent.scrollHeight;
+});
