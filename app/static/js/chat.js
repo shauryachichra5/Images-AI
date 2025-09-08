@@ -8,7 +8,7 @@ sendBtn.addEventListener("click", async () => {
 
     // Add user message
     const userMsg = document.createElement("div");
-    userMsg.className = "message user";
+    userMsg.classList.add("message", "right");
     userMsg.textContent = msg;
     chatContent.appendChild(userMsg);
 
@@ -26,8 +26,9 @@ sendBtn.addEventListener("click", async () => {
 
     const data = await response.json();
     const botMsg = document.createElement("div");
-    botMsg.className = "message bot";
+    botMsg.classList.add("message", "left");
     botMsg.textContent = data.reply;
     chatContent.appendChild(botMsg);
     chatContent.scrollTop = chatContent.scrollHeight;
+    
 });
