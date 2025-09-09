@@ -2,7 +2,7 @@ const chatContent = document.getElementById("chat_content");
 const chatInput = document.getElementById("chat_input");
 const sendBtn = document.getElementById("send_btn");
 
-sendBtn.addEventListener("click", async () => {
+async function sendMessage() {
     const msg = chatInput.value.trim();
     if (msg === "") return;
 
@@ -31,4 +31,13 @@ sendBtn.addEventListener("click", async () => {
     chatContent.appendChild(botMsg);
     chatContent.scrollTop = chatContent.scrollHeight;
     
+};
+
+sendBtn.addEventListener("click", sendMessage);
+
+chatInput.addEventListener("keydown", (e) => {
+    if (e.key=="Enter") {
+        e.preventDefault();
+        sendMessage();
+    }
 });

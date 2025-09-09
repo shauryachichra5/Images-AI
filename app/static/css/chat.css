@@ -42,13 +42,13 @@ html, body {
     background-color: #212121;
     color: white;
 }
-.heading {
-    padding: 8px;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    display: flex;
-}
+ .heading {
+    padding-left: 16px;
+    align-items: left;
+    border-bottom: 1px solid #444;
+    padding-bottom: 16px;
+    margin-bottom: 12px;
+ }
 .chat_content {
     flex: 1;
     padding: 16px;
