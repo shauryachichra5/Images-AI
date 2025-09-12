@@ -11,6 +11,6 @@ router = APIRouter()
 @router.post("/get_reply")
 async def api_get_reply(data: dict):
     user_message = data.get("message", "")
-    reply = bot_reply(user_message)
+    reply, images = bot_reply(user_message)
     
-    return JSONResponse({"reply": reply})
+    return JSONResponse({"reply": reply, "images_dict": images})
