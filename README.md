@@ -1,5 +1,5 @@
 # Images AI 🚀
-The aim of the project is to test out deployment (Render) and Docker
+The aim of the project is to test out deployment (Render for now..), docker and fast-api.
 
 ---
 
