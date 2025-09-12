@@ -1,9 +1,14 @@
-# Images AI
+# Images AI 🚀
 
-### Checkout ImagesAI Test V1 using docker
-#### Steps
-#### 1) Setup docker and login using your account
-#### 2) Create .env using template provided in the repo
-#### 3) Pull docker image using "docker pull shauryachichra/imagesai:v1"
+Test **ImagesAI V1** using Docker in just a few simple steps.
 
-##### Note: This is still a beta to test and learn docker and fast-api. Complete version coming soon.
+---
+
+### **Getting Started**
+
+1. **Install Docker** and log in to your Docker account.
+2. **Create a `.env` file** using the template provided in the repository.
+3. **Pull the Docker image**:
+
+```bash
+docker pull shauryachichra/imagesai:v1
