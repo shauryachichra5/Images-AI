@@ -9,7 +9,7 @@ Try it yourself -> https://images-ai-wz6g.onrender.com
 
 ---
 
-### **Getting Started**
+### **Getting Started** (Using Docker)
 
 1. **Install Docker** and log in to your Docker account.
 2. **Create a `.env` file** using the template provided in the repository.
