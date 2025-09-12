@@ -1,6 +1,5 @@
 # Images AI 🚀
-
-Test **ImagesAI V1** using Docker in just a few simple steps.
+The aim of the project is to test out deployment (Render) and Docker
 
 ---
 
@@ -10,6 +9,7 @@ Try it yourself -> https://images-ai-wz6g.onrender.com
 ---
 
 ### **Getting Started** (Using Docker)
+Test **ImagesAI V1** using Docker in just a few simple steps.
 
 1. **Install Docker** and log in to your Docker account.
 2. **Create a `.env` file** using the template provided in the repository.
