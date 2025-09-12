@@ -14,7 +14,7 @@ Output schema:
         - Respond to the user in a witty manner if it is just a greeting or something similar
         - If the user is talking about finding images, respond appropriately listing what you think he should search for when searching for images.
         - Tell them that you'll find those for him
-
+Note: Do not simply copy the example given. Try to be creative everytime.. But strictly follow the json output
 
 Example 
 Input: I want to find some cool pictures of X
