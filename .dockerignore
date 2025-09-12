@@ -1,0 +1,6 @@
+# Exclude this file
+.env
+
+# Exclude logs or temp files
+*.log
+__pycache__/
